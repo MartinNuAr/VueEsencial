@@ -5,14 +5,14 @@
 </template>
 
 <script>
-    export default {
-        name: 'MyComponent',
-        data (){
-            return {
+export default {
+    name: 'MyComponent',
+    data (){
+        return {
 
-            }
         }
     }
+}
 </script>
 
 <style>
