@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1> {{ album.titulo }}</h1>
-    <h2> {{ album.autor }}</h2>
+    <div v-html="album.titulo"></div>
+    <div v-html="album.autor"></div>
   </div>
 </template>
 
@@ -11,8 +11,8 @@ export default {
     data (){
         return {
             album: {
-                titulo: 'God\'s Dream',
-                autor: 'Ringo Deathstarr'
+                titulo: '<h1>God\'s Dream</h1>',
+                autor: '<h2>Ringo Deathstarr</h2>'
             }
         }
     }
