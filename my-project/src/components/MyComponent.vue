@@ -1,6 +1,8 @@
 <template>
     <div class="MyComponent">
-        <h1>Mi componente funciona</h1>
+        {{ comidas[0] }}
+        {{ comidas[1] }}
+        {{ comidas[2] }}
     </div>    
 </template>
 
@@ -9,7 +11,7 @@ export default {
     name: 'MyComponent',
     data (){
         return {
-
+            comidas: ['Spaghetti', 'Sandwich', 'Sopa']
         }
     }
 }
