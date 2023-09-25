@@ -18,17 +18,21 @@
         <button type="button" class="btn btn-dark">Dark</button>
         <button type="button" class="btn btn-link">Link</button>
       </div>
+      <MuchoTexto />
+      <p class="texto">Los perritos son bonitos</p>
     </div>
   </div>
 </template>
 
 <script>
+import MuchoTexto from './components/MuchoTexto.vue';
 import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    MuchoTexto
   }
 }
 </script>
