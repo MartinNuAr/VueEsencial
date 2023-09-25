@@ -2,20 +2,7 @@
   <div id="app">
     <div class="container">
       <div class="row">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+        <NavBar />
       </div>
       <div class="row">
         <h1>Prueba Bootstrap</h1>
@@ -36,11 +23,12 @@
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-
+    NavBar
   }
 }
 </script>
