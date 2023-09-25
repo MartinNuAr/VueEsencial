@@ -1,8 +1,11 @@
 <template>
     <div class="MyComponent">
-        <ul>
-            <li v-for="comida in comidas">{{ comida }}</li>
-        </ul>
+        <div v-for="comida in comidas">
+            <strong>Platillo: </strong> {{ comida.nombre }}
+            <br />
+            <strong>Precio: </strong> ${{ comida.precioMXN }}
+            <hr />
+        </div>
     </div>    
 </template>
 
@@ -11,7 +14,12 @@ export default {
     name: 'MyComponent',
     data (){
         return {
-            comidas: ['Spaghetti', 'Sandwich', 'Sopa', 'Carne asada']
+            comidas: [
+                {nombre: 'Spaghetti', precioMXN: 50},
+                {nombre: 'Sandwich', precioMXN: 30},
+                {nombre: 'Sopa', precioMXN: 40},
+                {nombre: 'Carne asada', precioMXN: 80}
+            ]
         }
     }
 }
