@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyComponent />
+    <MyComponent v-for="x in 4"/>
   </div>
 </template>
 
