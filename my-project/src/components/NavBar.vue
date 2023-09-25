@@ -1,7 +1,7 @@
 <template>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" v-bind:class="{ active: mostrarActivo }" href="#">Active</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -18,9 +18,9 @@
 <script>
 export default {
     name: 'NavBar',
-    export: {
-        data(){
-
+    data(){
+        return {
+            mostrarActivo: true
         }
     }
 }
