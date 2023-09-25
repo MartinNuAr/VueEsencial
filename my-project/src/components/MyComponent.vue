@@ -1,6 +1,8 @@
 <template>
     <div class="MyComponent">
-        <button v-if="mostrar">Botón oculto</button>
+        <button v-if="mostrar == 1">Botón 1</button>
+        <button v-else-if="mostrar == 2">Botón 2</button>
+        <button v-else>Botón genérico</button>
     </div>    
 </template>
 
@@ -9,7 +11,7 @@ export default {
     name: 'MyComponent',
     data (){
         return {
-            mostrar: true
+            mostrar: 3
         }
     }
 }
