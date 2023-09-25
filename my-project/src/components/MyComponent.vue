@@ -1,6 +1,6 @@
 <template>
     <div class="MyComponent">
-        <button>Click me</button>
+        <button v-if="mostrar">Botón oculto</button>
     </div>    
 </template>
 
@@ -8,7 +8,9 @@
 export default {
     name: 'MyComponent',
     data (){
-        
+        return {
+            mostrar: true
+        }
     }
 }
 </script>
