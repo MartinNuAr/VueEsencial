@@ -1,6 +1,6 @@
 <template>
     <li class="nav-item" v-bind:style="{'backgroundColor': randomColor}">
-        <a class="nav-link">{{ titulo }}</a>
+        <a class="nav-link">{{ navData.titulo }}</a>
     </li>
 </template>
 
@@ -13,7 +13,7 @@ export default {
         }
     },
     props: {
-        titulo: String
+        navData: Object
     }
 }
 </script>

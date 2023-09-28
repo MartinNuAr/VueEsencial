@@ -1,9 +1,13 @@
 <template>
     <ul class="nav">
-        <NavBarItem titulo="1"/>
-        <NavBarItem titulo="2"/>
-        <NavBarItem titulo="3"/>
-        <NavBarItem titulo="4"/>
+        <NavBarItem v-bind:nav-data="{
+            titulo: 'Inicio',
+            url: '_blank'
+        }"/>
+        <NavBarItem v-bind:nav-data="{
+            titulo: 'Contacto',
+            url: '_blank'
+        }"/>
     </ul>
 </template>
 
