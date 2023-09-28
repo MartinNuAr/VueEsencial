@@ -1,6 +1,6 @@
 <template>
     <li class="nav-item" v-bind:style="{'backgroundColor': randomColor}">
-        <a class="nav-link">{{ navData.titulo }}</a>
+        <a class="nav-link" v-bind:href="navData.url">{{ navData.titulo }}</a>
     </li>
 </template>
 

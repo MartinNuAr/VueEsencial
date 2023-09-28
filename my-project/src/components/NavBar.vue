@@ -2,11 +2,11 @@
     <ul class="nav">
         <NavBarItem v-bind:nav-data="{
             titulo: 'Inicio',
-            url: '_blank'
+            url: 'https://vuejs.org/'
         }"/>
         <NavBarItem v-bind:nav-data="{
             titulo: 'Contacto',
-            url: '_blank'
+            url: 'https://vuejs.org/'
         }"/>
     </ul>
 </template>
