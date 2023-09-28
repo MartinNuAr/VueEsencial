@@ -1,6 +1,6 @@
 <template>
     <li class="nav-item" v-bind:style="{'backgroundColor': randomColor}">
-        <a class="nav-link">Disabled</a>
+        <a class="nav-link">{{ titulo }}</a>
     </li>
 </template>
 
@@ -11,6 +11,9 @@ export default {
         return {
             randomColor: '#' + Math.floor(Math.random()*6777215).toString(16)
         }
+    },
+    props: {
+        titulo: String
     }
 }
 </script>

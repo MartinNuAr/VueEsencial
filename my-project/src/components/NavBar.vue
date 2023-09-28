@@ -1,9 +1,9 @@
 <template>
     <ul class="nav">
-        <NavBarItem />
-        <NavBarItem />
-        <NavBarItem />
-        <NavBarItem />
+        <NavBarItem titulo="1"/>
+        <NavBarItem titulo="2"/>
+        <NavBarItem titulo="3"/>
+        <NavBarItem titulo="4"/>
     </ul>
 </template>
 
