@@ -1,13 +1,6 @@
 <template>
     <ul class="nav">
-        <NavBarItem v-bind:nav-data="{
-            titulo: 'Inicio',
-            url: 'https://vuejs.org/'
-        }"/>
-        <NavBarItem v-bind:nav-data="{
-            titulo: 'Contacto',
-            url: 'https://vuejs.org/'
-        }"/>
+        <NavBarItem v-bind:nav-data="item" v-for="item in navItems"/>
     </ul>
 </template>
 
@@ -20,7 +13,16 @@ export default {
     },
     data(){
         return {
-            mostrarActivo: true,
+            navItems: [
+                {
+                    titulo: 'Inicio',
+                    url: 'https://vuejs.org/'
+                },
+                {
+                    titulo: 'Contactos',
+                    url: 'https://vuejs.org/'
+                }
+            ]
         }
     }
 }
