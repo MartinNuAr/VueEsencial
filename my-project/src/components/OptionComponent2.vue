@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container text-center">
+    <div class="row">
+        <p>Texto ({{ textInput }}):</p>
+    </div>
     <div class="row">
         <div class="col">
-            <p>Texto ({{ textInput }}):</p>
             <input type="text" v-model="textInput" />
         </div>
         <div class="col">

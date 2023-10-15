@@ -15,6 +15,9 @@
           <div class="col">
             <OptionComponent2 class="option-container"/>
           </div>
+          <div class="col">
+            <OptionComponent3 class="option-container"/>
+          </div>
         </div>
       </div>
     </div>
@@ -25,13 +28,15 @@
 import NavBar from './components/NavBar.vue';
 import OptionComponent1 from './components/OptionComponent1.vue';
 import OptionComponent2 from './components/OptionComponent2.vue';
+import OptionComponent3 from './components/OptionComponent3.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
     OptionComponent1,
-    OptionComponent2
+    OptionComponent2,
+    OptionComponent3
   }
 }
 </script>
