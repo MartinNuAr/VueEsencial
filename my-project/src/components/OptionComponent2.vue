@@ -2,10 +2,11 @@
   <div class="container">
     <div class="row">
         <div class="col">
-            <p>Texto:</p>
+            <p>Texto ({{ textInput }}):</p>
+            <input type="text" v-bind:value="textInput" />
         </div>
         <div class="col">
-            <input type="text" v-bind:value="textInput" />
+            <button class="btn btn-primary" v-on:click="textInput = 'Valor final'">Modificar</button>
         </div>
     </div>
   </div>
@@ -16,7 +17,7 @@ export default {
     name: 'OptionComponent2',
     data(){
         return {
-            textInput: ':D'
+            textInput: 'Valor inicial'
         }
     }
 }
