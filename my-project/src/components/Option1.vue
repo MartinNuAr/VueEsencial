@@ -1,7 +1,8 @@
 <template>
   <div class="option-1 text-center">
-    <p>Total: {{ option }}</p>
-    <button class="btn btn-primary" v-on:click="sumar">Sumar 1</button>
+    <p>Selección: {{ texto }}</p>
+    <button class="btn btn-primary" v-on:click="letraElegida('A')">A</button>
+    <button class="btn btn-primary" v-on:click="letraElegida('B')">B</button>
   </div>
 </template>
 
@@ -11,11 +12,15 @@ export default {
     data(){
         return {
             option: 0,
+            texto: ''
         }
     },
     methods: {
         sumar: function () {
             this.option += 1
+        },
+        letraElegida: function (letra) {
+            this.texto = letra;
         }
     }
 }
