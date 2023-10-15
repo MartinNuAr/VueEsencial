@@ -1,7 +1,7 @@
 <template>
   <div class="option-1 text-center">
-    <p>Opción 1 {{ option }}</p>
-    <button class="btn btn-primary" v-on:click="option = 'clickeada'"></button>
+    <p>Total: {{ option }}</p>
+    <button class="btn btn-primary" v-on:click="sumar">Sumar 1</button>
   </div>
 </template>
 
@@ -10,7 +10,12 @@ export default {
     name: 'OptionComponent1',
     data(){
         return {
-            option: ''
+            option: 0,
+        }
+    },
+    methods: {
+        sumar: function () {
+            this.option += 1
         }
     }
 }
@@ -20,5 +25,6 @@ export default {
     .option-1{
         border: 1px solid black;
         border-radius: 5px;
+        padding: 1em;
     }
 </style>
