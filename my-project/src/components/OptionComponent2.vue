@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col">
             <p>Texto ({{ textInput }}):</p>
-            <input type="text" v-bind:value="textInput" />
+            <input type="text" v-model="textInput" />
         </div>
         <div class="col">
             <button class="btn btn-primary" v-on:click="textInput = 'Valor final'">Modificar</button>
