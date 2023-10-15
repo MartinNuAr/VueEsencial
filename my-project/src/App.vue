@@ -5,22 +5,28 @@
         <NavBar />
       </div>
       <div class="row">
-        <h1>Prueba Bootstrap</h1>
+        <h1>Vue.js</h1>
       </div>
-      <MuchoTexto />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <Option1 />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import MuchoTexto from './components/MuchoTexto.vue';
 import NavBar from './components/NavBar.vue';
+import Option1 from './components/Option1.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    MuchoTexto
+    Option1
   }
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
     <ul class="nav">
+        <!-- eslint-disable-next-line -->
         <NavBarItem v-bind:nav-data="item" v-for="item in navItems"/>
     </ul>
 </template>
