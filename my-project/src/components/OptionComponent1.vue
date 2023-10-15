@@ -1,5 +1,5 @@
 <template>
-  <div class="option-1 text-center">
+  <div class="text-center">
     <p>Selección: {{ texto }}</p>
     <button class="btn btn-primary" v-on:click="letraElegida('A')">A</button>
     <button class="btn btn-primary" v-on:click="letraElegida('B')">B</button>
@@ -27,9 +27,5 @@ export default {
 </script>
 
 <style>
-    .option-1{
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 1em;
-    }
+
 </style>

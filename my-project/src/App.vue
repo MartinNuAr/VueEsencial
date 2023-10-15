@@ -10,7 +10,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <Option1 />
+            <OptionComponent1 class="option-container"/>
+          </div>
+          <div class="col">
+            <OptionComponent2 class="option-container"/>
           </div>
         </div>
       </div>
@@ -20,17 +23,23 @@
 
 <script>
 import NavBar from './components/NavBar.vue';
-import Option1 from './components/Option1.vue';
+import OptionComponent1 from './components/OptionComponent1.vue';
+import OptionComponent2 from './components/OptionComponent2.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Option1
+    OptionComponent1,
+    OptionComponent2
   }
 }
 </script>
 
 <style>
-
+  .option-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+  }
 </style>
